@@ -7,7 +7,7 @@ def tools = new toolsJenkisn()
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.call("Yorlin")
+            tools.call("Yorlin" String)
         }
     }
 } catch (e) {
