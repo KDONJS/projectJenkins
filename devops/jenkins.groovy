@@ -2,7 +2,7 @@
 
 import sharedLibrary.toolsJenkisn
 
-def tools = new toolsJenkisn()
+def tools = new toolsJenkisn(this)
 def nombre = "Yorlin"
 
 try {
