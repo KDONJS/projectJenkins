@@ -3,11 +3,12 @@
 import sharedLibrary.toolsJenkisn
 
 def tools = new toolsJenkisn()
+def nombre = "Yorlin"
 
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.call("Yorlin" String)
+            tools.call("${nombre}" as String)
         }
     }
 } catch (e) {
