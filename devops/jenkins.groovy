@@ -13,7 +13,6 @@ try {
         stage('Hacer un echo') {
             tools.printMessage("Hola ${nombre}")
         }
-        }
     }
 } catch (e) {
     tools.notifySlack("Error: ${e}")
