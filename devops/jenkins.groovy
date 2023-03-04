@@ -13,6 +13,9 @@ try {
         stage('Hacer un echo') {
             tools.printMessage("Hola ${nombre}")
         }
+        stage('SonarCloud') {
+            tools. analisisCodigo()
+        }
     }
 } catch (e) {
     tools.notifySlack("Error: ${e}")
