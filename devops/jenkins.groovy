@@ -10,6 +10,10 @@ try {
         stage('Saludo de pipeline') {
             tools.call("${nombre}" as String)
         }
+        stage('Hacer un echo') {
+            tools.printMessage("Hola ${nombre}")
+        }
+        }
     }
 } catch (e) {
     tools.notifySlack("Error: ${e}")
