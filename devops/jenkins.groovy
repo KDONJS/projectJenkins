@@ -14,7 +14,7 @@ try {
             tools.printMessage("Hola ${nombre}")
         }
         stage('SonarCloud') {
-            tools. analisisCodigo()
+            tools.analisisCodigo()
         }
     }
 } catch (e) {
