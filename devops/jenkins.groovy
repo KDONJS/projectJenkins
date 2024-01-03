@@ -4,6 +4,8 @@ import sharedLibrary.toolsJenkisn
 
 def tools = new toolsJenkisn(this)
 def nombre = "Yorlin"
+def credentialsId = "2"
+def remoteHost = "161.132.42.130"
 
 try {
     node {
@@ -11,7 +13,7 @@ try {
             tools.call("${nombre}" as String)
         }
         stage('Hacer un echo') {
-            tools.printMessage("Hola ${nombre}")
+            tools.connectSSH(credentialsId, remoteHost)
         }
         stage('SonarCloud') {
             tools.analisisCodigo()
