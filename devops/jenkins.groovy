@@ -2,7 +2,7 @@
 
 import sharedLibrary.toolsJenkisn
 
-def tools = new toolsJenkisn(this)
+def tools = new toolsJenkisn(steps, this)
 def nombre = "Yorlin"
 def credentialsId = "2"
 def remoteHost = "161.132.42.130"
