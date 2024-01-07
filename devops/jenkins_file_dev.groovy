@@ -1,4 +1,4 @@
-@Library('shared-library@develop')
+@Library('shared-library@master')
 
 import sharedLibrary.toolsJenkisn
 
