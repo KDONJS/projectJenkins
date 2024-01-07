@@ -10,10 +10,7 @@ def remoteHost = "161.132.42.130"
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.call("${nombre}" as String)
-        }
-        stage('SonarCloud') {
-            tools.analisisCodigo()
+            tools.callToActions("${nombre}" as String)
         }
     }
 } catch (e) {
