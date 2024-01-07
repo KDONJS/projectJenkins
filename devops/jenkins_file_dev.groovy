@@ -14,6 +14,6 @@ try {
         }
     }
 } catch (e) {
-    tools.notifySlack("Error: ${e}")
+    //tools.notifySlack("Error: ${e}")
     throw e
 }
