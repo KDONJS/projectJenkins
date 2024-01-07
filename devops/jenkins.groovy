@@ -1,4 +1,4 @@
-@Library('shared-library@feature/alfredo')
+@Library('shared-library@feature/Alfredo')
 
 import sharedLibrary.toolsJenkisn
 
