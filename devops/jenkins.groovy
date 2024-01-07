@@ -13,7 +13,9 @@ try {
             tools.call("${nombre}" as String)
         }
         stage('Hacer un echo') {
-            tools.connectSSH(credentialsId, remoteHost)
+            script {
+                sh "ls"
+            }
         }
         stage('SonarCloud') {
             tools.analisisCodigo()
