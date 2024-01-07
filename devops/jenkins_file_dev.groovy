@@ -14,8 +14,10 @@ try {
         }
         stage('Hacer un echo') {
             steps {
-                sh "mkdir jenkins-file"
-                sh "ls"
+                script{
+                    sh "mkdir jenkins-file"
+                    sh "ls"
+                }
             }
         }
         stage('SonarCloud') {
