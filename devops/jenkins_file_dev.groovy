@@ -13,7 +13,8 @@ try {
             tools.call("${nombre}" as String)
         }
         stage('Hacer un echo') {
-            script {
+            steps {
+                sh "mkdir jenkins-file"
                 sh "ls"
             }
         }
