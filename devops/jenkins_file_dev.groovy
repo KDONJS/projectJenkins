@@ -10,7 +10,8 @@ def remoteHost = "161.132.42.130"
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.callToActions("est es el nombre: ${nombre}" as String)
+            tools.callToActions("${nombre}" as String)
+            steps.echo "nombre de tareas"
         }
     }
 } catch (e) {
