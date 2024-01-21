@@ -1,4 +1,4 @@
-@Library('shared-library@master')
+ @Library('shared-library@master')
 
 import sharedLibrary.toolsJenkisn
 
@@ -10,7 +10,7 @@ def remoteHost = "161.132.42.130"
 try {
     node {
         stage('Saludo de pipeline') {
-            tools.callToActions("${nombre}" as String)
+            tools.callToActions("est es el nombre: ${nombre}" as String)
         }
     }
 } catch (e) {
