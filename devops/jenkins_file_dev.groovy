@@ -12,6 +12,9 @@ try {
         stage('execute Sh') {
             tools.executeSh()
         }
+        stage('verify Python') {
+            tools.verifyPython()
+        }
         stage('execute Py') {
             tools.executePy()
         }
