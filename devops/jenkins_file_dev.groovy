@@ -12,6 +12,9 @@ try {
         stage('execute Sh') {
             tools.executeSh()
         }
+        stage('execute Py') {
+            tools.executePy()
+        }
     }
 } catch (e) {
     //tools.notifySlack("Error: ${e}")
