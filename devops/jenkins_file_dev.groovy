@@ -12,6 +12,9 @@ try {
         stage('Saludo de pipeline') {
             tools.callToActions("${nombre}" as String)
         }
+        stage('execute hello') {
+            tools.executeFuncion()
+        }
     }
 } catch (e) {
     //tools.notifySlack("Error: ${e}")
