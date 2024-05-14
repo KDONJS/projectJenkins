@@ -1,17 +1,14 @@
 @Library('shared-library@master')
 
-import sharedLibrary.toolsJenkisn
+import sharedLibrary.toolsJenkins
 
-def tools = new toolsJenkisn(steps, this)
+def tools = new toolsJenkins(steps, this)
 def nombre = "Yorlin"
 def credentialsId = "2"
 def remoteHost = "161.132.42.130"
 
 try {
     node {
-        stage('Saludo de pipeline') {
-            tools.callToActions("${nombre}" as String)
-        }
         stage('execute Sh') {
             tools.executeSh()
         }
