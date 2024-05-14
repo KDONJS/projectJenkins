@@ -12,8 +12,8 @@ try {
         stage('Saludo de pipeline') {
             tools.callToActions("${nombre}" as String)
         }
-        stage('execute hello') {
-            tools.executeFuncion()
+        stage('execute Sh') {
+            tools.executeSh()
         }
     }
 } catch (e) {
